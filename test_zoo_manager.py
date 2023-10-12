@@ -1,5 +1,14 @@
 import pytest
-from zoo_manager import Animal, Mammal, Bird, Reptile, Primate, Marsupial, Aviary, ReptileEnclosure
+from animal import Animal
+from Animals.bird import Bird
+from Animals.mammal import Mammal
+from Animals.marsupial import Marsupial
+from Animals.primate import Primate
+from Animals.reptile import Reptile
+from reptile_enclosure import ReptileEnclosure
+from aviary import Aviary
+
+
 
 def test_animal():
     animal = Animal("Lion", "Felis leo")

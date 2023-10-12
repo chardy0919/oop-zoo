@@ -1,4 +1,4 @@
-from animal import Animal
+from animal import *
 
 class Mammal(Animal):
     def __init__ (self, _name, _species):
