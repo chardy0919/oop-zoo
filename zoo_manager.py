@@ -8,8 +8,14 @@ from reptile_enclosure import ReptileEnclosure
 from aviary import Aviary
 
 
-bird1 = Animal("bird","birdSpecies")
-mammal1 = Animal("mammal","mammalSpecies")
-marsupial1 = Animal("marspial","marspialSpecies")
-primate1 = Animal("primate","primateSpecies")
-reptile1 = Animal("reptile","reptileSpecies")
+bird1 = Bird("bird","birdSpecies",3)
+mammal1 = Mammal("mammal","mammalSpecies")
+marsupial1 = Marsupial("marspial","marspialSpecies")
+primate1 = Primate("primate","primateSpecies")
+reptile1 = Reptile("reptile","reptileSpecies")
+
+reptile_enclosure = ReptileEnclosure()
+reptile_enclosure.add_reptile(reptile1)
+
+
+print(reptile_enclosure.get_reptiles)
